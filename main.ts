@@ -377,7 +377,7 @@ namespace mecanumRover {
      * Turn the ultrasonic servo.
      */
     //% blockId=rover_ultrasonic_servo_turn block="Ultrasonic servo turn %angle"
-    //% angle.min=0 angle.max=100
+    //% angle.shadow="protractorPicker"
     //% weight=10
     //% group="Sensors"
     export function UltrasonicServoTurn(angle: number) {
@@ -403,6 +403,7 @@ namespace mecanumRover {
     //% blockId=rover_leds_on block="Set leds |%LedGroups| to color |%LedColors| and brightness %brightness"
     //% weight=20
     //% brightness.min=0 brightness.max=255
+    //% brightness.defl=255
     //% group="Leds"
     export function LedsOn(leds: LedGroups, color: LedColors, brightness: number) {
         let buffer = pins.createBuffer(12);
@@ -427,7 +428,7 @@ namespace mecanumRover {
     /**
      * Control the bottom leds
      */
-    //% blockId=rover_leds_off block="Switch off the leds"
+    //% blockId=rover_leds_off block="Switch off all leds"
     //% weight=10
     //% group="Leds"
     export function LedsOff() {

@@ -1,10 +1,16 @@
 {
     "name": "MecanumRover",
+    "version": "0.0.1",
     "description": "An unofficial Keyestudio 4wd mecanum rover (KS4031/KS4032) extension for makecode & micro:bit",
-    "icon": "./icon.png",
+    "license": "MIT",
+    "icon": "icon.png",
     "files": [
         "main.ts"
     ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
     "dependencies": {
         "core": "*",
         "ws2812b": "github:microsoft/pxt-ws2812b#v0.1.1",
